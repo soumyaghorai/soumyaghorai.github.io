@@ -3,7 +3,7 @@ layout: page
 permalink: /education/teach_maths/
 ---
 
-# Make a kid love maths.
+Make a kid love maths.
 
 On our various attempts and experiments, we have failed miserably in teaching mathematics.
 
