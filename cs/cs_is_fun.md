@@ -8,3 +8,5 @@ permalink: /cs_is_fun/
 
 * Bored with programming? Learn [Haskell](http://learnyouahaskell.com)
 * Want some memes? Look [here](https://www.facebook.com/npcompleteteens/). 
+* Some resources I used to love.
+	- [Algorithms](/cs/resourses/algo)
