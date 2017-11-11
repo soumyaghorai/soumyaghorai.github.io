@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: post
 permalink: /cs/resourses/algo
+published: true
 ---
 # Resources : Algorithm 
 * Network Flow
