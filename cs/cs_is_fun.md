@@ -10,3 +10,5 @@ permalink: /cs_is_fun/
 * Want some memes? Look [here](https://www.facebook.com/npcompleteteens/). 
 * Some resources I used to love.
 	- [Algorithms](/cs/resourses/algo)
+    - [Topics in Math](/cs/resourses/math)
+    - [Favourite proofs in Complexity Theory](/cs/resources/complexity)
