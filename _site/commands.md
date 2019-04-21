@@ -1,6 +1,27 @@
 This is not markdown.
 
 
+# setup jekyll serve 
+
+* dont do apt install jekyll
+
+sudo apt-get install ruby-dev
+
+sudo gem install bundler
+
+sudo gem install bundler -v 1.16.3
+
+sudo gem install ffi -v '1.9.18' --source 'https://rubygems.org/'
+
+bundle install
+
+
+
+# Jekyll Server
+
+bundle exec jekyll serve
+	
+
 # upload at git
 
 git add --all
@@ -8,9 +29,6 @@ git commit -m "Initial commit"
 git push -u origin master
 
 
-# Jekyll Server
-
-bundle exec jekyll serve
 
 
 #md-headings
