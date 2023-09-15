@@ -1,0 +1,47 @@
+.email::after {
+  content: "@cs.washington.edu";
+}
+
+.contact {
+  margin-bottom: 20px;
+}
+
+.contact img {
+  vertical-align: top;
+  width: 150px;
+  height: 165px;
+}
+
+.contact div {
+  vertical-align: top;
+  margin-top: 20px;
+  padding-top: 0px;
+  margin-left: 0px;
+}
+
+.contact p  {
+  margin: 0px 0px 10px 0px;
+}
+
+@media screen and (min-width: 800px) {
+  .contact {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+
+  .contact img {
+    vertical-align: top;
+    flex: 0 0;
+  }
+
+  .contact div {
+    vertical-align: top;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-left: 50px;
+    white-space: nowrap;
+    flex: 1 1 250px;
+  }
+}

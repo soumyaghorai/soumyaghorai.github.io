@@ -1,0 +1,139 @@
+
+.container {
+  max-width: 900px; }
+
+.header {
+  margin-top: 2rem; 
+  margin-bottom: 0rem;
+  border-bottom: 1px solid #eee;}
+
+.header a {
+ color: #222;
+}
+
+.header span {
+  float: right;
+  letter-spacing: -1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+    font-size: 1.2rem;  
+    
+}
+
+.title { text-align: left; }
+
+.sidebar h2 {
+    font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem;
+    margin-bottom: 1rem;
+}
+
+ul.contact {
+  list-style: none;
+}
+
+ul.contact img {
+    margin-top: .5em;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+    height: 2.4rem;
+}
+
+ul.navlist {
+    list-style: none;
+    border-bottom: 1px solid #E1E1E1;
+    margin-bottom: 3rem;
+    padding-bottom: 5px;
+}
+
+ul.navlist li {
+    display: inline;
+    padding-right: 3rem;
+}
+
+table { width: 100% }
+
+table.quicknews {
+  width: 100%;
+  margin-bottom: 4rem;
+  margin-top: 0rem;
+  border-bottom: 1px solid #E1E1E1; 
+}
+
+
+table.quicknews td {
+  padding-bottom: 5px;
+  padding-top: 0px;
+  padding-left: 0px;
+  margin: 0px;
+  border-bottom: 0;}
+
+table.quicknews td:first-child {
+  width: 9rem; }
+
+table.news {
+  width: 100%;
+  margin-bottom: 4rem;
+  margin-top: 0rem; 
+}
+
+table.news td {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 0px;
+  margin: 0px;
+  border: 0px;  }
+
+table.news td:first-child {
+  width: 9rem; }
+
+h3.bibliography {
+ font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem;
+ margin-bottom: 1rem;
+}
+
+ul.bibliography {
+  list-style-type: none;
+  list-style-position: inside;
+  text-indent: -1.7rem;
+  padding-left: 1.7rem;
+  padding-right: 0rem;
+  margin-right; 0rem;
+}
+
+ul.bibliography li {
+  margin-bottom: 1rem;
+  margin-right: 0rem;
+  padding-right: 0rem;
+}
+
+.mail::after {
+    content: "@cs.washington.edu";
+}
+
+li {
+    margin-bottom: 0rem;}
+
+ul {
+    margin-top: 0rem; }
+
+img.logo {
+    width: 2.6rem;
+}
+
+img.portrait {
+    width: 100%;
+    max-width: 200px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
