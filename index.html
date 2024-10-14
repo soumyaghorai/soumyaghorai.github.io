@@ -64,6 +64,14 @@
             margin-top: 20px;
             color: #bbb;
         }
+
+        .me {
+            display: none; /* Hide all sections initially */
+        }
+
+        .show {
+            display: block; /* Show the selected section */
+        }
     </style>
 </head>
 
@@ -150,14 +158,17 @@
             </section>
         </div>
 
-        <div class="me pub" id="publications">
+        <div class="me pub show" id="publications">
             <h2>Publications</h2>
             <ul>
                 <li>[AAAI 2024] "An Approximate Skolem Function Counter" with <a href="https://www.cse.wustl.edu/~bjuba/">Brendan Juba</a>, <a href="https://www.cs.toronto.edu/~meel/">Kuldeep S. Meel</a>
                     <p>(<a href="https://arxiv.org/abs/2312.12026">paper</a>, <a href="https://github.com/meelgroup/skolemfc">code</a>)</p>
                 </li>
                 <li>[SAT 2023] "Explaining SAT Solving Using Causal Reasoning" with <a href="al-jiongyang.github.io/">Jiong Yang</a>, <a href="https://teobaluta.github.io">Teodora Baluta</a>, <a href="https://www.msoos.org/"> Mate Soos</a>, <a href="https://www.cs.toronto.edu/~meel/">Kuldeep S. Meel</a>
-                    <p>(<a href="https://drops.dagstuhl.de/opus/volltexte/2023/18490/pdf/LIPIcs-SAT-2023-28.pdf">paper</a>, <a href="https://www.youtube.com/watch?v=1G8shDb5sV8">video</a>)</p>
+                    <p>(<a href="https://arxiv.org/abs/2310.12412">paper</a>, <a href="https://www.youtube.com/watch?v=z-bMB76a9Gk">video</a>)</p>
+                </li>
+                <li>[SAT 2023] "An Experimental Evaluation of SAT Solvers" with <a href="https://www.cs.toronto.edu/~meel/">Kuldeep S. Meel</a>
+                    <p>(<a href="https://arxiv.org/abs/2310.06657">paper</a>, <a href="https://www.youtube.com/watch?v=p7i0X2O4bMg">video</a>)</p>
                 </li>
                 <li>[SAT 2020] "Designing New Phase Selection Heuristics" with <a href="https://www.comp.nus.edu.sg/~meel/">Kuldeep S. Meel</a>
                     <p>(<a href="https://arxiv.org/abs/2005.04850">paper</a>, <a href="https://www.youtube.com/watch?v=t646RnONNHE">video</a>, <a href="https://github.com/meelgroup/duriansat">code</a>)</p>
@@ -169,7 +180,7 @@
             </ul>
         </div>
 
-        <div class="me exp" id="news">
+        <div class="me exp show" id="news">
             <h2>News</h2>
             <ul>
                 <li>[Feb, '24] Attending the <a href="https://aaai.org/aaai-conference/">AAAI '24 Conference</a> in Vancouver, Canada. Will be presenting our work on Skolem function counting.</li>
