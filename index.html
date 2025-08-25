@@ -65,6 +65,7 @@
 </head>
 
 <body>
+    <!-- Top buttons -->
     <div class="container">
         <p id="demo"></p>
         <div class="me-switcher">
@@ -75,41 +76,129 @@
         </div>
     </div>
 
+    <!-- Profile + header -->
     <div class="container">
-    <div class="header-section">
-        <div class="img-frame">
-            <img id="propic" src="profile.jpg" alt="profile picture" />
+        <div class="header-section">
+            <div class="img-frame">
+                <img id="propic" src="profile.jpg" alt="profile picture" />
+            </div>
+        </div>
+        <div class="header-section">
+            <div class="header-frame">
+                <h1>Soumya Ghorai</h1>
+                <h3 class="subtitle">Prime Minister Research Fellow</h3>
+                <h3 class="subtitle">Electrical Engineering Department</h3>
+                <h3 class="subtitle">Indian Institute of Technology Kharagpur</h3>
+            </div>
         </div>
     </div>
-    <div class="header-section">
-        <div class="header-frame">
-            <h1>Soumya Ghorai</h1>
-            <h3 class="subtitle">Prime Minister Research Fellow</h3>
-            <h3 class="subtitle">Electrical Engineering Department</h3>
-            <h3 class="subtitle">Indian Institute of Technology Kharagpur</h3>
-        </div>
-    </div>
-</div>
 
-
-    <!-- Rest of your content (tabs, sections, etc.) stays unchanged -->
+    <!-- Tabs -->
     <div class="container">
         <div class="tab-container">
             <div class="tab active" data-target="greeting"> Hi! </div>
             <div class="tab" data-target="education">Education</div>
             <div class="tab" data-target="research-interests">Research Interests</div>
             <div class="tab" data-target="Publications">Publications</div>
-            <div class="tab" data-target="Academic Experiences"> Academic Experiences</div>
-            <div class="tab" data-target="News"> News </div>
-            <div class="tab" data-target="Awards and Achievements"> Awards and Achievements</div>
-            <div class="tab" data-target="interests">Hobbies and Likes</div>
+            <div class="tab" data-target="Academic Experiences">Academic Experiences</div>
+            <div class="tab" data-target="News">News</div>
+            <div class="tab" data-target="Awards">Awards & Achievements</div>
+            <div class="tab" data-target="interests">Hobbies & Likes</div>
             <div class="tab" data-target="cv">Curriculum Vitae</div>
         </div>
 
-        <!-- Your existing tab content remains unchanged -->
-        <!-- ... keep all the tab-content sections you already have ... -->
+        <!-- Tab contents -->
+        <div class="tab-content active" id="greeting">
+            <h2>Warm Greetings!</h2>
+            <p>
+                I am Soumya (pronounced Sou-mo), currently pursuing a Doctor of Philosophy (2022–present) in Power Electronics at the Department of Electrical Engineering,  
+                <a href="https://www.iitkgp.ac.in/">Indian Institute of Technology Kharagpur</a>. 
+                My research, under the supervision of  
+                <a href="https://www.iitkgp.ac.in/department/EE/faculty/ee-souvik">Souvik Chattopadhay</a>, 
+                focuses on the control and modulation of dual-active-bridge-based AC–DC single-stage converters. 
+                Thanks to <a href="https://cpri.res.in/en/">Central Power Research Institute (CPRI)</a> for partly funding my work, which aims to develop a 50kW DC fast charging station for electric vehicles.
+            </p>
+        </div>
+
+        <div class="tab-content" id="education">
+            <h2>Education</h2>
+            <p>
+                I completed my Bachelor’s degree in Electrical Engineering from  
+                <a href="https://jadavpuruniversity.in/">Jadavpur University, Kolkata</a> in 2017, 
+                and obtained my Master’s degree in 2019 from the same institution, specializing in Energy Science and Technology.
+            </p>
+        </div>
+
+        <div class="tab-content" id="research-interests">
+            <h2>Research Interests</h2>
+            <p>
+                My research interests lie in single-stage AC–DC conversion circuits, particularly for high-power EV and PHEV chargers. 
+                These applications typically require power supplies ranging from tens to hundreds of kilowatts.
+            </p>
+            <p>
+                Conventional approaches employ two conversion stages: a PFC rectifier front end and a DC–DC stage. 
+                A promising alternative is the single-stage solution, which integrates PFC and high-frequency isolation in one structure. 
+                My work explores suitable modulation strategies that ensure:
+            </p>
+            <ul>
+                <li>Soft-switching and reduced conduction losses for higher efficiency.</li>
+                <li>Operation across wide battery voltage ranges with flat efficiency profiles.</li>
+                <li>Active power decoupling to reduce low-frequency ripple in single-phase chargers.</li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="Publications">
+            <h2>Publications</h2>
+            <ul>
+                <li>[INTELEC 2024] A Highly Efficient Wide Battery Voltage Range Dual Active Bridge-Based Single-stage Bidirectional EV Onboard Charger Without Low-Frequency Harmonics in the Charging Current. (<a href="https://ieeexplore.ieee.org/document/10679002">paper</a>)</li>
+                <li>[CALCON 2020] PV assisted Fuzzy-based EV charge scheduling for demand-side energy management. (<a href="https://ieeexplore.ieee.org/document/9106509">paper</a>)</li>
+                <li>[CALCON 2020] Revisiting small signal stability analysis techniques in multimachine power systems. (<a href="https://ieeexplore.ieee.org/document/9106547">paper</a>)</li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="Academic Experiences">
+            <h2>Academic Experiences</h2>
+            <p>Details of current and past projects, PCB design, and testing experience.</p>
+        </div>
+
+        <div class="tab-content" id="News">
+            <h2>News</h2>
+            <ul>
+                <li>[Sept 2024] Departmental seminar for Ph.D. registration.</li>
+                <li>[Aug 2024] Presented at INTELEC 2024.</li>
+                <li>[July 2024] CPRI quarterly progress report.</li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="Awards">
+            <h2>Awards & Achievements</h2>
+            <ul>
+                <li>Selected for PMRF Fellowship in Cycle 11 (Sept 2024).</li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="interests">
+            <h2>Hobbies & Likes</h2>
+            <p>
+                Beyond academia, I find joy in literature, photography, painting, and cinema.  
+                I also cherish trekking in the Himalayas, where the mountains feel like home — 
+                giant, true mirrors gazing back at you.  
+                I believe that hobbies and passions should never be sacrificed, even though balancing them with a busy schedule is often challenging.
+            </p>
+            <ul>
+                <li>I write poems and short stories; co-founded the audio-story platform <a href="https://www.youtube.com/@durpallargari932/videos">Durpallar Gari</a>.</li>
+                <li>I am part of <a href="https://www.youtube.com/@educationforall6806">Education for All</a>, an initiative to spread scientific thinking in rural West Bengal.</li>
+                <li>My photography is available on <a href="https://www.instagram.com/soumya_shaheen/profilecard/?igsh=MTc4amFzeWw1d2tiYQ==">Instagram</a>.</li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="cv">
+            <h2>Curriculum Vitae</h2>
+            <p>You can find my CV <a href="CV.pdf">here</a>.</p>
+        </div>
     </div>
 
+    <!-- Footer + email -->
     <h5 class="terminal-prompt">ping soumya</h5>
     <div class="terminal-alert">
         <div class="header-section">
@@ -121,12 +210,11 @@
 
     <div class="container">
         <div class="me other">
-            <p>
-                Find CV <a href="CV.pdf">here</a>.
-            </p>
+            <p>Find CV <a href="CV.pdf">here</a>.</p>
         </div>
     </div>
 
+    <!-- JS for tabs -->
     <script>
         const tabs = document.querySelectorAll('.tab');
         const contents = document.querySelectorAll('.tab-content');
