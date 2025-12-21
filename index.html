@@ -1,265 +1,197 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
 <title>Soumya Ghorai</title>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<!-- Fonts: Academic & Professional -->
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://unpkg.com/terminal.css@0.6.6/dist/terminal.min.css" />
-<link rel="stylesheet" href="./style.css" />
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://unpkg.com/terminal.css@0.6.6/dist/terminal.min.css"/>
 
 <style>
-    /* Styles for header with name + subtitle */
-    .header-frame h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-    .subtitle {
-        font-family: 'Roboto Mono', monospace;
-        font-size: 1rem;
-        text-align: center;
-        margin: 3px 0;
-        color: #00008B;
-    }
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fafafa;
+    color: #222;
+}
 
-    /* Styles for the tab navigation */
-    .tab {
-        display: inline-block;
-        padding: 10px;
-        cursor: pointer;
-        background-color: #E1F5FE; /* Light serene blue */
-        border: 1px solid #00008B; /* Deep blue border */
-        margin-right: 5px;
-        border-radius: 5px;
-        color: #00008B; /* Deep blue text color */
-        transition: background-color 0.3s, color 0.3s;
-    }
+h1, h2 {
+    font-family: 'Source Serif 4', serif;
+}
 
-    .tab.active {
-        background-color: #ccc;
-    }
+.header-frame h1 {
+    font-size: 2.4rem;
+    margin-bottom: 8px;
+    text-align: center;
+}
 
-    .tab-content {
-        display: none;
-        margin-top: 10px;
-    }
+.subtitle {
+    font-size: 0.95rem;
+    text-align: center;
+    margin: 2px 0;
+    color: #444;
+}
 
-    .tab-content.active {
-        display: block;
-    }
+.profile-links {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
 
-    h2 {
-        color: #00008B;
-        background-color: #B2EBF2;
-        padding: 10px;
-        border-radius: 5px;
-    }
+.profile-links a {
+    color: #003366;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.profile-links a:hover {
+    text-decoration: underline;
+}
+
+.tab {
+    display: inline-block;
+    padding: 8px 14px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin-right: 6px;
+    border-radius: 4px;
+    color: #222;
+    font-size: 0.9rem;
+}
+
+.tab.active {
+    background-color: #ddd;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 15px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+h2 {
+    background-color: #f2f2f2;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+
+a {
+    color: #003366;
+}
 </style>
 </head>
 
 <body>
-    <!-- Top buttons -->
-    <div class="container">
-        <p id="demo"></p>
-        <div class="me-switcher">
-            <div class="toggler">
-                <button id="about" class="button blue">About</button>
-                <button id="other" class="button fuchsia" onclick="window.location.href='CV.pdf';">CV</button>
-            </div>
-        </div>
-    </div>
 
-    <!-- Profile + header -->
-    <div class="container">
-        <div class="header-section">
-            <div class="img-frame">
-                <img id="propic" src="profile.jpg" alt="profile picture" />
-            </div>
-        </div>
-        <div class="header-section">
-            <div class="header-frame">
-                <h1>Soumya Ghorai</h1>
-                <h3 class="subtitle">Prime Minister Research Fellow</h3>
-                <h3 class="subtitle">Electrical Engineering Department</h3>
-                <h3 class="subtitle">Indian Institute of Technology Kharagpur</h3>
+<div class="container">
+
+    <!-- Profile -->
+    <div class="header-section">
+        <div class="header-frame">
+            <h1>Soumya Ghorai</h1>
+            <div class="subtitle">Prime Minister Research Fellow</div>
+            <div class="subtitle">Department of Electrical Engineering</div>
+            <div class="subtitle">Indian Institute of Technology Kharagpur</div>
+
+            <!-- Professional Links -->
+            <div class="profile-links">
+                <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">Google Scholar</a> |
+                <a href="https://www.linkedin.com/in/soumya-ghorai-648214218/" target="_blank">LinkedIn</a> |
+                <a href="CV.pdf" target="_blank">CV</a>
             </div>
         </div>
     </div>
 
     <!-- Tabs -->
-    <div class="container">
-        <div class="tab-container">
-            <div class="tab active" data-target="greeting"> Hi! </div>
-            <div class="tab" data-target="education">Education</div>
-            <div class="tab" data-target="research-interests">Research Interests</div>
-            <div class="tab" data-target="Publications">Publications</div>
-            
-          
-            
-            <div class="tab" data-target="interests">Pursuits</div>
-           
-        </div>
+    <div class="tab-container">
+        <div class="tab active" data-target="about">About</div>
+        <div class="tab" data-target="education">Education</div>
+        <div class="tab" data-target="research">Research</div>
+        <div class="tab" data-target="publications">Publications</div>
+        <div class="tab" data-target="interests">Pursuits</div>
+    </div>
 
-        <!-- Tab contents -->
-        <div class="tab-content active" id="greeting">
-            <h2>Warm Greetings!</h2>
-            <p>
-                I am Soumya (pronounced Sou-mo), currently pursuing a Doctor of Philosophy (2022–present) in Power Electronics at the Department of Electrical Engineering,  
-                <a href="https://www.iitkgp.ac.in/">Indian Institute of Technology Kharagpur</a>. 
-                My research, under the supervision of  
-                <a href="https://www.iitkgp.ac.in/department/EE/faculty/ee-souvik">Souvik Chattopadhay</a>, 
-                focuses on bidirectional AC–DC/AC–AC high-frequency power conversion systems. 
-            </p>
-        </div>
+    <!-- About -->
+    <div class="tab-content active" id="about">
+        <h2>About</h2>
+        <p>
+            I am currently pursuing a Ph.D. (2022–present) in Power Electronics at
+            <a href="https://www.iitkgp.ac.in/">IIT Kharagpur</a>, under the supervision of
+            <a href="https://www.iitkgp.ac.in/department/EE/faculty/ee-souvik">Prof. Souvik Chattopadhyay</a>.
+            My research focuses on high-frequency bidirectional AC–DC and AC–AC power conversion systems.
+        </p>
+    </div>
 
-        <div class="tab-content" id="education">
-            <h2>Education</h2>
-            <p>
-                I completed my Bachelor’s degree in Electrical Engineering from  
-                <a href="https://jadavpuruniversity.in/">Jadavpur University, Kolkata</a> in 2017, 
-                and obtained my Master’s degree in 2019 from the same institution, specializing in Energy Science and Technology.
-            </p>
-        </div>
+    <!-- Education -->
+    <div class="tab-content" id="education">
+        <h2>Education</h2>
+        <p>
+            B.E. in Electrical Engineering, Jadavpur University (2017)<br>
+            M.E. in Energy Science and Technology, Jadavpur University (2019)
+        </p>
+    </div>
 
-       <div class="tab-content" id="research-interests"> 
-    <h2>Research Interests</h2>
-    <p>
-        <span style="color:#8B0000; font-family:'Brush Script MT', cursive; font-size:1.3em;">
-            "Le vent se lève. Il faut tenter de vivre"
-        </span> 
-        <span style="font-style:italic; color:#555;">
-            — from the film <i>"The Wind Rises"</i>, Hayao Miyazaki
-        </span>
-    </p>
-    <p>
-        My research interests lie in single-stage AC–DC conversion circuits, particularly for high-power EV and PHEV chargers. 
-        These applications typically require inductively isolated single-phase or three-phase AC-to-DC circuits, ranging from 3.3 to tens of kilowatts.
-    </p>
-    <p>
-        Conventional approaches employ two conversion stages: a PFC rectifier front end and a DC–DC stage. 
-        A promising alternative is the single-stage solution, which integrates PFC and high-frequency isolation in a suitably crafted hybrid structure. 
-        My work explores suitable modulation strategies that ensure:
-    </p>
-    <ul>
-        <li>Modulation strategies ensuring minimum high-frequency current RMS while enhancing soft switching, achieving higher efficiency.</li>
-        <li>Operation across wide battery voltage ranges and wide power range while maintaining nearly flat efficiency profiles.</li>
-        <li>Active power decoupling in the case of single-phase PFC integrated DAB on-board chargers to reduce low-frequency ripple in single-phase chargers. This is necessary for better Li-ion battery health, as reported.</li>
-    </ul>
+    <!-- Research -->
+    <div class="tab-content" id="research">
+        <h2>Research Interests</h2>
+        <p style="font-style:italic; color:#555;">
+            “Le vent se lève. Il faut tenter de vivre.” — Hayao Miyazaki
+        </p>
+        <p>
+            My work explores single-stage isolated AC–DC conversion for high-power EV and PHEV chargers,
+            emphasizing soft switching, wide operating ranges, and high efficiency.
+        </p>
+    </div>
+
+    <!-- Publications -->
+    <div class="tab-content" id="publications">
+        <h2>Publications</h2>
+        <ul>
+            <li>
+                IEEE JESTPE — Combined PWM and Phase-Shift Control of a Variable DC-Link PFC Integrated DAB Topology
+            </li>
+            <li>
+                ECCE-Asia, INTELEC, CALCON (see Google Scholar for full list)
+            </li>
+        </ul>
+    </div>
+
+    <!-- Interests -->
+    <div class="tab-content" id="interests">
+        <h2>Pursuits</h2>
+        <p>
+            Beyond research, I enjoy literature, photography, painting, and trekking in the Himalayas.
+            These pursuits keep me grounded and creatively engaged.
+        </p>
+    </div>
+
 </div>
 
+<script>
+const tabs = document.querySelectorAll('.tab');
+const contents = document.querySelectorAll('.tab-content');
 
-        <div class="tab-content" id="Publications">
-            <h2>Journals</h2> 
-            <ul>
-                <li>[IEEE JESTPE] Combined PWM and Phase-Shift Control of a Variable DC-Link PFC Integrated DAB Topology for Wide-Range High-Efficiency EV Chargers. (<a href="https://ieeexplore.ieee.org/abstract/document/11134378">paper</a>)</li>
-            </ul>
-            <h2>Conferences</h2> 
-            <ul>
-                <li>[ECCE-Asia 2025] Dual Active Bridge-Based Isolated Single-phase Single-Stage DC-link AC/AC Converter with Minimum Charge Storage Requirement. (<a href="https://ieeexplore.ieee.org/abstract/document/11111754">paper</a>)</li>
-                <li>[ECCE-Asia 2025] A New Three-phase Single-stage DAB Isolated Phase-modular PFC Topology with Sextuple Active Bridges. (<a href="https://ieeexplore.ieee.org/abstract/document/11112414">paper</a>)</li>
-                <li>[INTELEC 2024] A Highly Efficient Wide Battery Voltage Range Dual Active Bridge-Based Single-stage Bidirectional EV Onboard Charger Without Low-Frequency Harmonics in the Charging Current. (<a href="https://ieeexplore.ieee.org/document/10679002">paper</a>)</li>
-                <li>[CALCON 2020] PV-assisted Fuzzy-based EV charge scheduling for demand-side energy management. (<a href="https://ieeexplore.ieee.org/document/9106509">paper</a>)</li>
-                <li>[CALCON 2020] Revisiting small signal stability analysis techniques in multimachine power systems. (<a href="https://ieeexplore.ieee.org/document/9106547">paper</a>)</li>
-            </ul>
-            <h2> Patent Applications</h2> 
-            <ul>
-                <li>[IN Patent App. 202531034478] A MODULAR DUAL-ACTIVE BRIDGE (DAB)- BASED THREE-PHASE AC-TO-DC CONVERSION SYSTEM. - Soumya Ghorai, Akhil Chambayil, Souvik Chattopadhyay </li>
-                <li>[IN Patent App. 202531034483] A NOVEL CONTROL & MODULATION TECHNIQUE FOR SINGLE-STAGE POWER ELECTRONIC TRANSFORMER.- Soumya Ghorai, Souvik Chattopadhyay</li>
-                <li>[IN Patent App. 202431104682] A HIGHLY EFFICIENT ACTIVE POWER DECOUPLED SINGLE-PHASE SINGLE-STAGE EV ONBOARD CHARGING SYSTEM WITH RIPPLE-LESS DC BATTERY CHARGING CURRENT. - Soumya Ghorai, Souvik Chattopadhyay</li>
-            </ul>
-        </div>
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.target).classList.add('active');
+    });
+});
+</script>
 
-        <div class="tab-content" id="Academic Experiences">
-            <h2>Academic Experiences</h2>
-            <p>Details of current and past projects, PCB design, and testing experience.</p>
-        </div>
+<footer style="text-align:center; margin-top:40px; font-size:0.85rem; color:#666;">
+    © Soumya Ghorai
+</footer>
 
-        <div class="tab-content" id="News">
-            <h2>News</h2>
-            <ul>
-                <li>[Sept 2024] Departmental seminar for Ph.D. registration.</li>
-                <li>[Aug 2024] Presented at INTELEC 2024.</li>
-                <li>[July 2024] CPRI quarterly progress report.</li>
-            </ul>
-        </div>
-
-        <div class="tab-content" id="Awards">
-            <h2>Awards & Achievements</h2>
-            <ul>
-                <li>Selected for PMRF Fellowship in Cycle 11 (Sept 2024).</li>
-            </ul>
-        </div>
-
-        <div class="tab-content" id="interests">
-            <h2>Pursuits and pastimes</h2>
-            <p>
-                Beyond academia, I find joy in literature, photography, painting, and cinema.   
-                I also cherish trekking in the Himalayas, where the mountains feel like home — 
-                giant, true mirrors gazing back at you.  
-                I believe that hobbies and passions should never be sacrificed, even though balancing them with a busy schedule is often challenging.
-            </p>
-            <ul>
-                
-                <li>
-  I used to scribble poems and short stories; co-founded the audio-story platform 
-  <a href="https://www.youtube.com/@durpallargari932/videos" target="_blank">Durpallar Gari (YouTube)</a> | 
-  <a href="https://www.facebook.com/share/1HH9ipEyZy/" target="_blank">Durpallar Gari (Facebook)</a>.
-</li>
-
-                <li>I am part of <a href="https://www.youtube.com/@educationforall6806">Education for All</a>, an initiative to spread scientific thinking in rural West Bengal.</li>
-                <li>My photography is available on <a href="https://www.instagram.com/soumya_shaheen/profilecard/?igsh=MTc4amFzeWw1d2tiYQ==">Instagram</a>.</li>
-            </ul>
-        </div>
-
-
-    </div>
-
-<!-- Footer + email + LinkedIn -->
-<h5 class="terminal-prompt">ping soumya</h5>
-<div class="terminal-alert">
-    <div class="header-section">
-        <div class="links">
-            <a href="mailto:soumyaghoraijuee2013@gmail.com">email</a> | 
-            <a href="https://www.linkedin.com/in/soumya-ghorai-648214218/?originalSubdomain=in" target="_blank">LinkedIn</a>
-        </div>
-    </div>
-</div>
-
-    <div class="container">
-        <div class="me other">
-            <p>Find CV <a href="CV.pdf">here</a>.</p>
-        </div>
-    </div>
-
-    <!-- JS for tabs -->
-    <script>
-        const tabs = document.querySelectorAll('.tab');
-        const contents = document.querySelectorAll('.tab-content');
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const target = tab.getAttribute('data-target');
-
-                tabs.forEach(t => t.classList.remove('active'));
-                contents.forEach(c => c.classList.remove('active'));
-
-                tab.classList.add('active');
-                document.getElementById(target).classList.add('active');
-            });
-        });
-
-        tabs[0].click();
-    </script>
-
-    <footer>
-        <p>Style credits go to <a href="https://terminalcss.xyz">terminal theme</a>.</p>
-    </footer>
 </body>
 </html>
